@@ -59,6 +59,8 @@ body {
 .home-content h1 {
     font-size: 56px;
     font-weight: 700;
+    margin-right: 14vh;
+    padding-bottom: -4vh;
 }
 
 .home-content h3 {
@@ -70,6 +72,8 @@ body {
 .home-content p {
     font-size: 16px;
     margin: 20px 0 30px; /* Adjusted bottom margin for less space */
+    line-height: 1.8;
+    
 }
 
 .btn-box {
@@ -336,14 +340,15 @@ body {
 /* Project Container */
 .projects-container {
     display: flex; /* Change from grid to flex */
-    flex-wrap: wrap; /* Allows wrapping for responsiveness */
+    /* flex-wrap: wrap; Allows wrapping for responsiveness */
     justify-content: center; /* Centers items horizontally */
     align-items: center; /* Centers items vertically */
     gap: 20px; /* Space between items */
     padding: 20px;
-    max-width: 1200px;
+    width: 100%;
+    /* max-width: 1200px; */
     margin: 20px auto;
-    min-height: 60vh; /* Ensures enough height for vertical centering */
+    min-height: 80vh; /* Ensures enough height for vertical centering */
 }
 
 /* Project Card */
@@ -355,6 +360,7 @@ body {
     padding: 20px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: auto;
 }
 
 .project-card:hover {
@@ -373,7 +379,10 @@ body {
     margin-bottom: 20px;
     color: #555;
 }
-
+.project-card img{
+    height: 30vh;
+    width: 58vh;
+}
 .project-link {
     display: inline-block;
     text-decoration: none;
@@ -389,4 +398,32 @@ body {
     background-color: #1a4352;
 }
 
-  
+.project-details {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+}
+
+.project-details img {
+    max-width: 80%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.project-details h2 {
+    font-size: 28px;
+    color: #225666;
+    margin-bottom: 10px;
+}
+
+.project-details p {
+    font-size: 16px;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.project-details img{
+    width: 80vh;
+}
